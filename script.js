@@ -4,7 +4,7 @@ const particles = [];
 function setup() {
   const canvas = createCanvas(window.innerWidth, window.innerHeight);
   canvas.parent("canvasForHTML");
-  const particlesLength = Math.floor(window.innerWidth / 13);
+  const particlesLength = Math.floor(window.innerWidth / 10);
 
   for (let i = 0; i < particlesLength; i++) {
     particles.push(new Particle());
@@ -25,7 +25,7 @@ class Particle {
   constructor() {
     this.size = 10;
     this.pos = createVector(random(width), random(height));
-    this.vel = createVector(random(-1.2, 1.2), random(-1.2, 1.2));
+    this.vel = createVector(random(-1.8, 1.8), random(-1.8, 1.8));
   }
 
   // draw particle
